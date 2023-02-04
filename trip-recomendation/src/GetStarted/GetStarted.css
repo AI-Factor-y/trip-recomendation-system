@@ -1,0 +1,46 @@
+.get-started-background {
+    height: 100vh;
+    background-color: #e9ecf5;
+    overflow-y: hidden;
+}
+
+.get-started-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.get-started-form{
+    width:500px;
+    /* background-color: aqua; */
+}
+
+.get-started-title {
+    font-size: 30px;
+}
+
+.get-started-appname{
+    font-size: 20px;
+    margin-bottom: 75px;
+}   
+
+.get-started-fadetext {
+    font-size: 20;
+    color: grey;
+}
+
+.get-started-displayname {
+    margin-top: 25px;
+}
+
+.get-started-container button {
+    width: 100%;
+}
