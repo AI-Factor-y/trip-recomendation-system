@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 750px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color:  #00BFA6 ;
+}
+/* .navbar .links {
+  margin-left: auto;
+} */
+.navbar a {
+  margin-left: 6px;
+  margin-right: 6px;
+  text-decoration: none;
+  padding: 6px;
+  color:  #161621 ;
+}
+.navbar a:hover {
+  color:  #00BFA6 ;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.poll-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.poll-preview a{
+  text-decoration: none;
+}
+
+.poll-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.poll-preview h2 {
+  font-size: 20px;
+  color:  #00BFA6 ;
+  margin-bottom: 8px;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h1 {
+  font-size: 40px;
+  color:  #00BFA6 ;
+  margin-bottom: 30px;
+}
+
+.create h2 {
+  font-size: 20px;
+  color:  #00BFA6 ;
+  margin-bottom: 30px;
+}
+.create input, .create textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create select {
+  width: 50%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button {
+  background:  #00BFA6 ;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.trapezium {
+  border-bottom: 150px solid #00BFA6;
+	border-left: 0px solid transparent;
+	border-right: 75px solid transparent;
+	height: 0;
+	width: 70%;
+  position:absolute;
+}
+
+.rectangle {
+  height: 200px;
+  width: 100%;
+  background-color: #34344f;
+  position:absolute;
+}
