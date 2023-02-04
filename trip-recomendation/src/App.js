@@ -1,25 +1,28 @@
+import React from "react";
+import SignUp from "./Components/SignUp";
+import { AuthProvider } from "./Context/AuthContext";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import PrivateRoute from "./Components/PrivateRoute";
+import Login from "./Components/Login";
+import ForgotPassword from "./Components/ForgotPassword";
 import GetStarted from './GetStarted/GetStarted';
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-        <GetStarted/>
+    <div>
+      <Router>
+        <AuthProvider>
+          <Routes>
+            <Route exact path="/" element={ <Login/>} />
+            <Route path="/signUp" element={<SignUp/>} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/forgot-password" element={<ForgotPassword/>} />
+            <Route path="/get-started" element={<GetStarted/>} />
+          </Routes>
+        </AuthProvider>
+      </Router>
     </div>
   );
 }
 
-export default App;
+export default App
