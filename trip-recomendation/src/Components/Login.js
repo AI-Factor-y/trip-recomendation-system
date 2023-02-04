@@ -10,7 +10,7 @@ export default function Login(props) {
     const { currentUser } = useAuth();
     const [error, setError] = useState();
     const [loading, setLoading] = useState(false);
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -19,7 +19,7 @@ export default function Login(props) {
             setError("");
             setLoading(true);
             await login(emailRef.current.value, passwordRef.current.value);
-            history.push("/");
+            navigate("/");
         } catch {
             setError("Failed to Login");
         }
