@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
     let prevBtn = document.getElementById("prev");
     let nextBtn = document.getElementById("next");
+
+    function autoSlide(){
+      prevBtn.click();
+    }
+
+    setInterval(autoSlide, 3500);
   
     let background = document.querySelector(".background");
     let indices = document.querySelectorAll(".index");
