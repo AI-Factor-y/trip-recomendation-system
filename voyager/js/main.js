@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let background = document.querySelector(".background");
     let indices = document.querySelectorAll(".index");
   
-    let bgImgs = ["Indonesia.jpg", "Kerala.jpg", "Bali.jpg", "Thailand.jpg"];
+    let bgImgs = ["Alappuzha.jpg", "Varkala.jpeg", "Arripara.jpg", "Vagamon.jpg"];
   
     let currentIndex = 0;
   
